@@ -6,5 +6,5 @@ Repositório PSD com materiais de apoio, exercicios e script para facilitar a ex
   - nasm (arquivos necessários para executar os arquivos .asm);
 
 ### Como usar:
-- Execute o arquivo e.sh seguido do nome do arquivo .asm na raiz do projeto sem a extenção - "teste.asm" = teste.;
-- `e.sh teste`
+- Execute o arquivo e.sh seguido do nome do arquivo .asm na raiz do projeto sem a extenção - "teste.asm" = "teste";
+- `$ e.sh teste`
