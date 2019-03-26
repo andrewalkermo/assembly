@@ -1,5 +1,5 @@
 #!/bin/bash
-# echo $1
+
 if [[ -z $1 ]]; then
   read -p "Digite o nome arquivo sem extencao: " entrada
 else
