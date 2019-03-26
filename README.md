@@ -2,7 +2,7 @@ Repositório PSD com materiais de apoio, exercicios e script para facilitar a ex
 
 ### Pastas
   - atividade (Atividades do Moodle);
-  - material (pdfs com materiais de apoio do Moodle e outros);
+  - material (pdfs com materiais de apoio do Moodle);
   - nasm (arquivos necessários para executar os arquivos .asm);
 
 ### Como usar:
