@@ -6,7 +6,7 @@ else
   entrada=$1                                                  # salva o conteudo do parametro em $entrada
 fi
 if [[ ! -f $1 ]]; then                                        # verifica se o arquivo existe
-  echo "caminho do arquivo invalido"
+  echo "caminho do arquivo invalido"                          # imprime erro
   exit                                                        # interrompe a execucao
 fi
 entrada="$(cut -d'.' -f 1 <<< $entrada)"                      # retira a extensao .asm de $entrada
