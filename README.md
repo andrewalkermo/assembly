@@ -1,4 +1,4 @@
-Repositório PSD com materiais de apoio, exercicios e script para facilitar a executal de arquivos .asm.
+Repositório PSD com materiais de apoio, exercicios e script para facilitar a execucao de arquivos .asm.
 
 ### Pastas
   - atividade (Atividades do Moodle);
@@ -6,5 +6,5 @@ Repositório PSD com materiais de apoio, exercicios e script para facilitar a ex
   - nasm (arquivos necessários para executar os arquivos .asm);
 
 ### Como usar:
-- Execute o arquivo e.sh seguido do nome do arquivo .asm na raiz do projeto;
-- `$ e.sh teste.nasm`
+  - Execute o arquivo e.sh seguido do caminho do arquivo .asm, ou deixe em branco que o programa vai solicitar;
+  - `$ e.sh atividade/teste.asm`
