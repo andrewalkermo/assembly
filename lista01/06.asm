@@ -21,7 +21,7 @@ final:
 
 asm_main:
     mov ecx,8
-	
+
 read:
 	call read_char
 
@@ -33,8 +33,12 @@ read:
 	add [Resultado],eax
 nxt:
 	loop read
+
+
+
+
 	mov eax,[Resultado]
 	call print_int
 	call print_nl
-    leave                     
+    leave
     ret
