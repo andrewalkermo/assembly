@@ -1,25 +1,23 @@
 
 %include "lib/asm_io.inc"
 
-
 segment .data
 
-
- filename db "test.txt", 0
-  buflen dw 2048
-
+    filename db "test.txt", 0
+    buflen dw 2048
 
 segment .bss
 
-   buffer resb 2048
-
+    buffer resb 2048
 
 segment .text
 
-%include "lib/read_write_file.asm"
+    %include "lib/read_write_file.asm"
+    global  asm_main
 
-        global  asm_main
 asm_main:
+
+    
 
     push filename
     push buffer
