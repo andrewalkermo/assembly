@@ -50,21 +50,8 @@ insert:
     cmp dword [edi], 0  ;verify if list is null
     je empty
 
-    push esi
-    call insert
-    add esp, 12
-    jmp end
+    ;loop que percorre a lista e acha o ultmo nó e acrecenta depois dele
 
-
-    insert_sub_tree_left:
-    push ebx
-    mov ecx, [edi]
-    sub ecx, 8 ;get left child
-    push dword ecx
-    push dword esi
-    call insert
-    add esp, 12
-    jmp end
 
     empty:
     call create_node
