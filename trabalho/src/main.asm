@@ -6,7 +6,7 @@ segment .data
     cabo db "cabo", 0
     filename db "test.txt", 0
     buflen dw 2048
-    ascii times 300 db 0
+    ascii times 256 dd 0
 segment .bss
 
     buffer resb 2048
@@ -30,30 +30,32 @@ asm_main:
         lodsb
         cmp al, 0
         je exit
-        
-        mov edx, [ascii+eax]
+        imul ecx, eax, 4
+
+        mov edx, [ascii+ecx]
         inc edx
-        mov [ascii+eax], edx
+        mov [ascii+ecx], edx
         jmp print
     exit:
         call print_nl
 
-    mov ecx, 256                     ;define o tamanho do loop de saida
-    mov ebx, 0                      ;defne o contador que irá percorrer o vetor
+    mov ecx, 256
+    mov ebx, 0
     saida:
-        ; mov eax, ebx                     ;incrementa contador
-        mov eax, [ascii+ebx]      ;move para eax cada caractere do vetor
+
+        imul edx, ebx, 4
+        mov eax, [ascii+edx]
         call print_int
         mov eax, '-'
-        call print_char             ;imprime cada caractere d vetor
+        call print_char
         mov eax, ebx
-        call print_int             ;imprime cada caractere d vetor
+        call print_int
         call print_nl
 
         inc ebx
-        loop saida                  ;repete o loop
+        loop saida
 
-    call print_nl                   ;imprime a quebra de linha
+    call print_nl
 
 
     leave
