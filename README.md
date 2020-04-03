@@ -1,4 +1,4 @@
-Repositório PSD com materiais de apoio, exercicios e script para facilitar a execucao de arquivos .asm.
+Repositório com materiais de apoio, exercicios e script para facilitar a execucao de arquivos .asm.
 
 # materiais de apoio
 
